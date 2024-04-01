@@ -10,7 +10,7 @@ export const connectToMongoDB = ()=>{
         .then(clientInstance=>{
             client=clientInstance
             console.log("Mongodb is connected");
-            createCounter(client.db());
+            
         })
         .catch(err=>{
             console.log(err);
